@@ -21,6 +21,9 @@ public class coffeBeans {
     
     public void grind(String type){
     }
+    //public void grindBeans(int amountOfBeans, String grindSize) {
+    // كيف بدنا نطحن وكم الكمية يعني السايز هون قصديكيفية الطحن يعني ناعم كتير او لا والاماونت هي كمية القهوة 
+    //}
 
     
     public String getInfo() {
