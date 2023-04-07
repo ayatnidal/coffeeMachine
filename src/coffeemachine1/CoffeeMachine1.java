@@ -4,17 +4,19 @@
  */
 package coffeemachine1;
 
-/**
- *
- * @author ayatnidal11
- */
+import java.util.Scanner;
+
+
 public class CoffeeMachine1 {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Scanner scanner = new Scanner(System.in);
+        int water;
+        int coffeeBeans;
+        
+
     }
-    
 }
