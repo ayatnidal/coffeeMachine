@@ -7,7 +7,7 @@ package coffeemachine1;
 import java.util.Scanner;
 
 
-public class CoffeeMachine1 {
+public class Main {
 
     /**
      * @param args the command line arguments
