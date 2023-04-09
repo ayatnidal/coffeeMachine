@@ -13,10 +13,6 @@ public class CoffeeMachine1 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        int water;
-        int coffeeBeans;
         
-
     }
 }

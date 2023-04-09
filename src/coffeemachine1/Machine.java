@@ -13,6 +13,9 @@ public class Machine {
     private coffeBeans beans;
     private double water,waterCapacity,beansCapacity;
     private int cup,dripTray;
+    //private int amountOfCoffee;
+    //private int caffeineContent;
+    //private boolean needsCleaning;
 
     public Machine() {
     }
@@ -81,6 +84,14 @@ public class Machine {
     public void fillBeans(){
         
     }
+    
+    //public int calculateCaffeine(int amountOfCoffee) {   
+    //return caffeineContent;
+    //}
+    
+    //public boolean needsCleaning() { 
+    //return needsCleaning;
+    //}
 
     public String getInfo() {
         return "Machine{" + "beans=" + beans + ", water=" + water + ", waterCapacity=" + waterCapacity + ", beansCapacity=" + beansCapacity + ", cup=" + cup + ", dripTray=" + dripTray + '}';
