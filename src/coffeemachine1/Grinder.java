@@ -9,10 +9,31 @@ package coffeemachine1;
  * @author ayatnidal11
  */
 public class Grinder {
-    private int level ;
-    
-    public void grind(int amount){
-        
+    private int beansCapacity;
+
+    public Grinder(int beansCapacity) {
+        this.beansCapacity = beansCapacity;
+    }
+
+    public int getBeansCapacity() {
+        return beansCapacity;
+    }
+
+    public void setBeansCapacity(int beansCapacity) {
+        this.beansCapacity = beansCapacity;
     }
     
+
+    public void grindBeans(int amount) {
+    try {
+        if (amount > beansCapacity) {
+            throw new Exception("Not enough beans in the machine");
+        }
+
+        System.out.println("Grinding " + amount + "g of beans...");
+        beansCapacity -= amount;
+    } catch (Exception e) {
+        System.out.println("Error: " + e.getMessage());
+    }
+}
 }

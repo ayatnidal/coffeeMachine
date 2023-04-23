@@ -14,7 +14,8 @@ public class coffeeMachine {
     private wastTray wtray;
     private Grinder grinder;
     private Logger log;
-
+    
+    
     public coffeeMachine() {
     }
 
@@ -64,9 +65,5 @@ public class coffeeMachine {
 
     public void setLog(Logger log) {
         this.log = log;
-    }
-    
-    
-    
-    
+    } 
 }

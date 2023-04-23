@@ -9,14 +9,31 @@ package coffeemachine1;
  * @author ayatnidal11
  */
 public class beansContener {
-    
-    private int capacity;
-    private int level;
-    
-    public void fillBeans(int amount){
-        
+    private int beansCapacity;
+    private static final int Max_Beans_Capacity = 500;
+
+    public beansContener(int beansCapacity) {
+        this.beansCapacity = beansCapacity;
     }
-    public void drawBeans(int amount){
-        
+
+    public int getBeansCapacity() {
+        return beansCapacity;
     }
+
+    public void setBeansCapacity(int beansCapacity) {
+        this.beansCapacity = beansCapacity;
+    }
+
+    public void addBeans(int amount) {
+    try {
+        if (beansCapacity + amount > Max_Beans_Capacity) {
+            throw new Exception("Bean capacity exceeded");
+        }
+
+        System.out.println("Adding " + amount + "g of beans...");
+        beansCapacity += amount;
+    } catch (Exception e) {
+        System.out.println("Error: " + e.getMessage());
+    }
+}
 }
